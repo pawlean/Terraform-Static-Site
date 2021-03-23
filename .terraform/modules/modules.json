@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"website","Source":"./.deploy/terraform/static-site","Dir":".deploy/terraform/static-site"},{"Key":"iconone","Source":"./.deploy/terraform/icon-one","Dir":".deploy/terraform/icon-one"},{"Key":"icon-one","Source":"./.deploy/terraform/icon-one","Dir":".deploy/terraform/icon-one"},{"Key":"","Source":"","Dir":"."}]}
