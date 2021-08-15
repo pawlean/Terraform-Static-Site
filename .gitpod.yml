@@ -3,6 +3,9 @@ tasks:
     init: brew tap hashicorp/tap # runs during prebuild
     command: brew install hashicorp/tap/terraform
     openMode: split-left
+  - name: Initalise Terraform
+    init: terraform init
+    command: terraform plan
   - name: Free terminal
     command: echo "For anything you want!"
     openMode: split-right
