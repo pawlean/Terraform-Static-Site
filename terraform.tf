@@ -7,15 +7,8 @@ terraform {
   }
 }
 
-variable "aws_region" {
-  type = string
-}
-
-variable "domain_name" {
-  type = string
-}
-
 provider "aws" {
+    profile = "default"
   region = var.aws_region
 }
 
