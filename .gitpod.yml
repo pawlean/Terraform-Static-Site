@@ -1,4 +1,3 @@
-# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - name: Install Terraform
     init: brew tap hashicorp/tap # runs during prebuild
@@ -7,3 +6,9 @@ tasks:
   - name: Free terminal
     command: echo "For anything you want!"
     openMode: split-right
+    env:
+      MY_SECRET_KEY: "define these in Gitpod Dashboard, don't commit to .gitpod.yml file :)"
+      MY_ACCESS_KEY: "define these in Gitpod Dashboard, don't commit to .gitpod.yml file :)"
+vscode:
+  extensions:
+    - hashicorp.terraform

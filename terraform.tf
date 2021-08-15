@@ -8,11 +8,12 @@ terraform {
 }
 
 provider "aws" {
-    profile = "default"
-  region = var.aws_region
+    region = var.aws_region
+    access_key = MY_ACCESS_KEY
+    secret_key = MY_SECRET_KEY 
 }
 
 module "website" {
-  source = "./.deploy/terraform/static-site"
-  domain_name = var.domain_name
+    source = "./.deploy/terraform/static-site"
+    domain_name = var.domain_name
 }
